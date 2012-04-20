@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  card_id: 1
+  expansion_id: 1
+  artist_id: 1
+  rarity_id: 1
+  number: 1
+  multiverse_id: 1
+
+two:
+  card_id: 1
+  expansion_id: 1
+  artist_id: 1
+  rarity_id: 1
+  number: 1
+  multiverse_id: 1

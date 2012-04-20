@@ -10,15 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120420154730) do
+ActiveRecord::Schema.define(:version => 20120420174130) do
+
+  create_table "artists", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "cards", :force => true do |t|
     t.string   "name"
     t.string   "mana_cost"
-    t.string   "types"
     t.text     "text"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "power"
+    t.string   "toughness"
+    t.string   "face"
+    t.string   "color_indicator"
+    t.integer  "transforms_into_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "cards_types", :force => true do |t|
+    t.integer "card_id"
+    t.integer "type_id"
   end
 
   create_table "expansions", :force => true do |t|
@@ -31,6 +46,25 @@ ActiveRecord::Schema.define(:version => 20120420154730) do
     t.string   "directory"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "printings", :force => true do |t|
+    t.integer "card_id"
+    t.integer "expansion_id"
+    t.integer "artist_id"
+    t.integer "rarity_id"
+    t.integer "number"
+    t.integer "multiverse_id"
+  end
+
+  create_table "rarities", :force => true do |t|
+    t.string "name"
+    t.string "abbreviation"
+  end
+
+  create_table "types", :force => true do |t|
+    t.string "name"
+    t.string "type"
   end
 
 end
