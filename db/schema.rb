@@ -23,8 +23,12 @@ ActiveRecord::Schema.define(:version => 20120420154730) do
 
   create_table "expansions", :force => true do |t|
     t.string   "name"
+    t.string   "code"
     t.date     "release_date"
     t.string   "border"
+    t.string   "scg_name"
+    t.integer  "scg_number"
+    t.string   "directory"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

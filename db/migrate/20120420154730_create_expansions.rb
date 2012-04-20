@@ -6,7 +6,7 @@ class CreateExpansions < ActiveRecord::Migration
       t.date :release_date
       t.string :border
       t.string :scg_name
-      t.string :integer
+      t.integer :scg_number
       t.string :directory
 
       t.timestamps
