@@ -1,0 +1,665 @@
+- :name: Limited Edition Alpha
+  :code: 1ED
+  :border: alpha
+  :scg_name: cor2
+  :scg_number: 1000
+  :release_date: 1993/08/05
+
+- :name: Limited Edition Beta
+  :code: 2ED
+  :border: black
+  :scg_name: cor3
+  :scg_number: 1001
+  :release_date: 1993/10/01
+
+- :name: Unlimited Edition
+  :code: 2UD
+  :border: white
+  :scg_name: cor4
+  :scg_number: 1002
+  :release_date: 1993/12/01
+
+- :name: Revised Edition
+  :code: 3ED
+  :border: white
+  :scg_name: cor5
+  :scg_number: 1003
+  :release_date: 1994/04/01
+
+- :name: Fourth Edition
+  :code: 4ED
+  :border: white
+  :scg_name: cor6
+  :scg_number: 1009
+  :release_date: 1995/04/01
+
+- :name: Fifth Edition
+  :code: 5ED
+  :border: white
+  :scg_name: cor7
+  :scg_number: 1015
+  :release_date: 1997/04/24
+
+- :name: Classic Sixth Edition
+  :code: 6ED
+  :border: white
+  :scg_name: cor8
+  :scg_number: 1025
+  :release_date: 1999/04/28
+
+- :name: Seventh Edition
+  :code: 7ED
+  :border: white
+  :scg_name: cor9
+  :scg_number: 1037
+  :release_date: 2001/04/11
+
+- :name: Eighth Edition
+  :code: 8ED
+  :border: white
+  :scg_name: cor10
+  :scg_number: 1053
+  :release_date: 2003/07/28
+
+- :name: Ninth Edition
+  :code: 9ED
+  :border: white
+  :scg_name: cor11
+  :scg_number: 5023
+  :release_date: 2005/07/29
+
+- :name: Tenth Edition
+  :code: 10E
+  :border: black
+  :scg_name: cor12
+  :scg_number: 5061
+  :release_date: 2007/07/14
+
+- :name: Magic 2010
+  :code: M10
+  :border: black
+  :scg_name: cor13
+  :scg_number: 5137
+  :release_date: 2009/07/17
+
+- :name: Magic 2011
+  :code: M11
+  :border: black
+  :scg_name: cor14
+  :scg_number: 5192
+  :release_date: 2010/07/16
+
+- :name: Magic 2012
+  :code: M12
+  :border: black
+  :scg_name: "5211"
+  :scg_number: 5211
+  :release_date: 2011/07/15
+
+- :name: Arabian Nights
+  :code: ARN
+  :border: black
+  :scg_name: ear12
+  :scg_number: 1004
+  :release_date: 1993/12/01
+
+- :name: Antiquities
+  :code: ATQ
+  :border: black
+  :scg_name: ear13
+  :scg_number: 1005
+  :release_date: 1994/03/01
+
+- :name: Legends
+  :code: LEG
+  :border: black
+  :scg_name: ear14
+  :scg_number: 1006
+  :release_date: 1994/06/01
+
+- :name: The Dark
+  :code: DRK
+  :border: black
+  :scg_name: ear15
+  :scg_number: 1007
+  :release_date: 1994/08/01
+
+- :name: Fallen Empires
+  :code: FEM
+  :border: black
+  :scg_name: ear16
+  :scg_number: 1008
+  :release_date: 1994/11/01
+
+- :name: Homelands
+  :code: HML
+  :border: black
+  :scg_name: ice20
+  :scg_number: 1011
+  :release_date: 1995/10/16
+
+- :name: Ice Age
+  :code: ICE
+  :border: black
+  :scg_name: ice19
+  :scg_number: 1010
+  :release_date: 1995/06/01
+
+- :name: Alliances
+  :code: ALL
+  :border: black
+  :scg_name: ice21
+  :scg_number: 1012
+  :release_date: 1996/06/10
+
+- :name: Coldsnap
+  :code: CLD
+  :border: black
+  :scg_name: ice22
+  :scg_number: 5040
+  :release_date: 2006/07/21
+
+- :name: Mirage
+  :code: MIR
+  :border: black
+  :scg_name: mir23
+  :scg_number: 1013
+  :release_date: 1996/10/07
+
+- :name: Visions
+  :code: VIS
+  :border: black
+  :scg_name: mir24
+  :scg_number: 1014
+  :release_date: 1997/02/03
+
+- :name: Weatherlight
+  :code: WTH
+  :border: black
+  :scg_name: mir25
+  :scg_number: 1016
+  :release_date: 1997/06/09
+
+- :name: Tempest
+  :code: TMP
+  :border: black
+  :scg_name: em26
+  :scg_number: 1017
+  :release_date: 1997/10/13
+
+- :name: Stronghold
+  :code: STH
+  :border: black
+  :scg_name: tem27
+  :scg_number: 1018
+  :release_date: 1998/03/02
+
+- :name: Exodus
+  :code: EXO
+  :border: black
+  :scg_name: tem28
+  :scg_number: 1019
+  :release_date: 1998/06/15
+
+- :name: "Urza's Saga"
+  :code: USG
+  :border: black
+  :scg_name: sag29
+  :scg_number: 1020
+  :release_date: 1998/10/12
+
+- :name: "Urza's Legacy"
+  :code: ULG
+  :border: black
+  :scg_name: sag30
+  :scg_number: 1021
+  :release_date: 1999/02/15
+
+- :name: "Urza's Destiny"
+  :code: UDS
+  :border: black
+  :scg_name: sag31
+  :scg_number: 1023
+  :release_date: 1999/06/07
+
+- :name: Mercadian Masques
+  :code: MMQ
+  :border: black
+  :scg_name: mas32
+  :scg_number: 1027
+  :release_date: 1999/10/04
+
+- :name: Nemesis
+  :code: NMS
+  :border: black
+  :scg_name: mas33
+  :scg_number: 1029
+  :release_date: 2000/02/14
+
+- :name: Prophecy
+  :code: PCY
+  :border: black
+  :scg_name: mas34
+  :scg_number: 1031
+  :release_date: 2000/06/05
+
+- :name: Invasion
+  :code: INV
+  :border: black
+  :scg_name: inv35
+  :scg_number: 1033
+  :release_date: 2000/10/02
+
+- :name: Planeshift
+  :code: PLS
+  :border: black
+  :scg_name: inv36
+  :scg_number: 1035
+  :release_date: 2001/02/05
+
+- :name: Apocalypse
+  :code: APC
+  :border: black
+  :scg_name: inv37
+  :scg_number: 1039
+  :release_date: 2001/06/04
+
+- :name: Odyssey
+  :code: ODY
+  :border: black
+  :scg_name: ody38
+  :scg_number: 1041
+  :release_date: 2001/10/01
+
+- :name: Torment
+  :code: TOR
+  :border: black
+  :scg_name: ody39
+  :scg_number: 1043
+  :release_date: 2002/02/04
+
+- :name: Judgment
+  :code: JUD
+  :border: black
+  :scg_name: ody40
+  :scg_number: 1045
+  :release_date: 2002/05/27
+
+- :name: Onslaught
+  :code: ONS
+  :border: black
+  :scg_name: ons41
+  :scg_number: 1047
+  :release_date: 2002/10/07
+
+- :name: Legions
+  :code: LGN
+  :border: black
+  :scg_name: ons42
+  :scg_number: 1049
+  :release_date: 2003/02/03
+
+- :name: Scourge
+  :code: SCG
+  :border: black
+  :scg_name: ons43
+  :scg_number: 1051
+  :release_date: 2003/05/26
+
+- :name: Mirrodin
+  :code: MRD
+  :border: black
+  :scg_name: mib44
+  :scg_number: 1055
+  :release_date: 2003/10/03
+
+- :name: Darksteel
+  :code: DST
+  :border: black
+  :scg_name: mib45
+  :scg_number: 1057
+  :release_date: 2004/02/06
+
+- :name: Fifth Dawn
+  :code: 5DN
+  :border: black
+  :scg_name: mib46
+  :scg_number: 5007
+  :release_date: 2004/06/04
+
+- :name: Champions of Kamigawa
+  :code: CHK
+  :border: black
+  :scg_name: kam47
+  :scg_number: 5005
+  :release_date: 2004/10/01
+
+- :name: Betrayers of Kamigawa
+  :code: BOK
+  :border: black
+  :scg_name: kam48
+  :scg_number: 5018
+  :release_date: 2005/02/04
+
+- :name: Saviors of Kamigawa
+  :code: SOK
+  :border: black
+  :scg_name: kam49
+  :scg_number: 5020
+  :release_date: 2005/06/03
+
+- :name: "Ravnica: City of Guilds"
+  :code: RAV
+  :border: black
+  :scg_name: rav50
+  :scg_number: 5026
+  :release_date: 2005/10/07
+
+- :name: Guildpact
+  :code: GPT
+  :border: black
+  :scg_name: rav51
+  :scg_number: 5035
+  :release_date: 2006/02/03
+
+- :name: Dissension
+  :code: DIS
+  :border: black
+  :scg_name: rav52
+  :scg_number: 5037
+  :release_date: 2006/05/05
+
+- :name: Time Spiral
+  :code: TSP
+  :border: black
+  :scg_name: tim53
+  :scg_number: 5042
+  :release_date: 2006/10/06
+
+- :name: Time Spiral Timeshifted
+  :code: TSB
+  :border: black
+  :scg_name: tim53
+  :scg_number: 5042
+  :release_date: 2006/10/06
+
+- :name: Planar Chaos
+  :code: PLC
+  :border: black
+  :scg_name: tim54
+  :scg_number: 5049
+  :release_date: 2007/02/02
+
+- :name: Future Sight
+  :code: FUT
+  :border: black
+  :scg_name: tim55
+  :scg_number: 5055
+  :release_date: 2007/05/04
+
+- :name: Lorwyn
+  :code: LRW
+  :border: black
+  :scg_name: lor1
+  :scg_number: 5064
+  :release_date: 2007/10/12
+
+- :name: Morningtide
+  :code: MOR
+  :border: black
+  :scg_name: lor2
+  :scg_number: 5083
+  :release_date: 2008/02/01
+
+- :name: Shadowmoor
+  :code: SHM
+  :border: black
+  :scg_name: sha1
+  :scg_number: 5094
+  :release_date: 2008/05/02
+
+- :name: Eventide
+  :code: EVE
+  :border: black
+  :scg_name: sha2
+  :scg_number: 5096
+  :release_date: 2008/07/25
+
+- :name: Shards of Alara
+  :code: ALA
+  :border: black
+  :scg_name: ala1
+  :scg_number: 5106
+  :release_date: 2008/10/03
+
+- :name: Conflux
+  :code: CON
+  :directory: CFX # CON is a reserved word in Windows.
+  :border: black
+  :scg_name: ala2
+  :scg_number: 5116
+  :release_date: 2009/02/06
+
+- :name: Alara Reborn
+  :code: ARB
+  :border: black
+  :scg_name: ala3
+  :scg_number: 5131
+  :release_date: 2009/04/30
+
+- :name: Zendikar
+  :code: ZEN
+  :border: black
+  :scg_name: "5172"
+  :scg_number: 5172
+  :release_date: 2009/10/02
+
+- :name: Worldwake
+  :code: WWK
+  :border: black
+  :scg_name: "5177"
+  :scg_number: 5177
+  :release_date: 2010/02/05
+
+- :name: Rise of the Eldrazi
+  :code: ROE
+  :border: black
+  :scg_name: "5187"
+  :scg_number: 5187
+  :release_date: 2010/04/23
+
+- :name: Scars of Mirrodin
+  :code: SOM
+  :border: black
+  :scg_name: "5197"
+  :scg_number: 5197
+  :release_date: 2010/10/01
+
+- :name: Mirrodin Besieged
+  :code: MBS
+  :border: black
+  :scg_name: "5202"
+  :scg_number: 5202
+  :release_date: 2011/02/04
+
+- :name: New Phyrexia
+  :code: NPH
+  :border: black
+  :scg_name: "5207"
+  :scg_number: 5207
+  :release_date: 2011/05/13
+
+- :name: Innistrad
+  :code: ISD
+  :border: black
+  :scg_name: "5215"
+  :scg_number: 5215
+  :release_date: 2011/09/30
+
+- :name: Dark Ascension
+  :code: DKA
+  :border: black
+  :scg_name: "5221"
+  :scg_number: 5221
+  :release_date: 2012/02/03
+
+- :name: Chronicles
+  :code: CHR
+  :border: white
+  :scg_name: rep17
+  :scg_number: 1062
+  :release_date: 1995/07/01
+
+- :name: Anthologies
+  :code: ANT
+  :border: white
+  :scg_name: bx64
+  :scg_number: 1068
+  :release_date: 1998/11/01
+
+- :name: Battle Royale Box Set
+  :code: BRB
+  :border: white
+  :scg_name: bx63
+  :scg_number: 1069
+  :release_date: 1999/11/12
+
+- :name: Beatdown Box Set
+  :code: BTD
+  :border: white
+  :scg_name: bx65
+  :scg_number: 1070
+  :release_date: 2000/12/01
+
+- :name: Deckmasters
+  :code: DKM
+  :border: white
+  :scg_name: bx66
+  :scg_number: 1071
+  :release_date: 2001/12/01
+
+- :name: Archenemy
+  :code: ARC
+  :border: black
+  :scg_name: "5190"
+  :scg_number: 5190
+  :release_date: 2010/06/18
+
+- :name: Commander
+  :code: CMD
+  :border: black
+  :scg_name: "5213"
+  :scg_number: 5213
+  :release_date: 2011/06/17
+
+- :name: Portal
+  :code: POR
+  :border: black
+  :scg_name: por56
+  :scg_number: 1059
+  :release_date: 1997/06/01
+
+- :name: Portal Second Age
+  :code: P02
+  :border: black
+  :scg_name: por57
+  :scg_number: 1060
+  :release_date: 1998/06/01
+
+- :name: Portal Three Kingdoms
+  :code: PTK
+  :border: white
+  :scg_name: por58
+  :scg_number: 1061
+  :release_date: 1999/05/01
+
+- :name: Starter 1999
+  :code: S99
+  :border: white
+  :scg_name: por59
+  :scg_number: 1063
+  :release_date: 1999/07/01
+
+- :name: Starter 2000
+  :code: S00
+  :border: white
+  :scg_name: por60
+  :scg_number: 5014
+  :release_date: 2000/07/01
+
+- :name: Unglued
+  :code: UGL
+  :border: silver
+  :scg_name: ung61
+  :scg_number: 1064
+  :release_date: 1998/08/17
+
+- :name: Unhinged
+  :code: UNH
+  :border: silver
+  :scg_name: un62
+  :scg_number: 5016
+  :release_date: 2004/11/19
+
+- :name: "Duel Decks: Elves vs. Goblins"
+  :code: EVG
+  :border: black
+  :scg_name: "205"
+  :scg_number: 5082
+  :release_date: 2007/11/16
+
+- :name: "Duel Decks: Jace vs. Chandra"
+  :code: DD2
+  :border: black
+  :scg_name: "5115"
+  :scg_number: 5115
+  :release_date: 2008/11/07
+
+- :name: "Duel Decks: Divine vs. Demonic"
+  :code: DDC
+  :border: black
+  :scg_name: "5134"
+  :scg_number: 5134
+  :release_date: 2009/04/10
+
+- :name: "Duel Decks: Garruk vs. Liliana"
+  :code: DDD
+  :border: black
+  :scg_name: "5176"
+  :scg_number: 5176
+  :release_date: 2009/10/30
+
+- :name: "Duel Decks: Phyrexia vs. The Coalition"
+  :code: DDE
+  :border: black
+  :scg_name: "5189"
+  :scg_number: 5189
+  :release_date: 2010/03/19
+
+- :name: "Duel Decks: Elspeth vs. Tezzeret"
+  :code: DDF
+  :border: black
+  :scg_name: "5195"
+  :scg_number: 5195
+  :release_date: 2010/09/03
+
+- :name: "Duel Decks: Knights vs. Dragons"
+  :code: DDG
+  :border: black
+  :scg_name: "5209"
+  :scg_number: 5209
+  :release_date: 2011/04/01
+
+- :name: "Duel Decks: Ajani vs. Nicol Bolas"
+  :code: DDH
+  :border: black
+  :scg_name: "5217"
+  :scg_number: 5217
+  :release_date: 2011/09/12
+
+- :name: Planechase
+  :code: HOP
+  :border: black
+  :scg_name: "5174"
+  :scg_number: 5174
+  :release_date: 2009/09/04
