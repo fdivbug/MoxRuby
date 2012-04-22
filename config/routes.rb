@@ -1,10 +1,4 @@
 MoxRuby::Application.routes.draw do
-  resources :user
-  resources :user_sessions
-
-  match 'login'   => 'user_sessions#new', :as => :login
-  match 'logout'  => 'user_sessions#destroy', :as => :logout
-  match 'profile' => 'user_sessions#edit', :as => :profile
 
   match '/decks' => 'decks#index'
 
