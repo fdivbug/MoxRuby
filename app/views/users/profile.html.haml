@@ -1,0 +1,25 @@
+%h1 Edit Your Profile
+= form_for @user, :url => user_path do |f|
+  - if @user.errors.any?
+    #error_explanation
+      %h2= raw "There was a problem updating your profile.<br />Please fix #{pluralize(@user.errors.count, "error")}:"
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+
+  %table
+    %tr
+      %th= f.label :username
+      %td= @user.username
+    %tr
+      %th= f.label :email
+      %td= f.text_field :email
+    %tr
+      %th= f.label :password
+      %td= f.password_field :password
+    %tr
+      %th= f.label :password_confirmation, "Password Confirmation"
+      %td= f.password_field :password_confirmation
+    %tr
+      %td &nbsp;
+      %td= f.submit "Save"

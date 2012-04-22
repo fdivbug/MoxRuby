@@ -1,6 +1,10 @@
 MoxRuby::Application.routes.draw do
+  resource :user
+  match 'login' => 'users#login', :as => :login
+  match 'logout' => 'users#logout', :as => :logout
+  match 'profile' => 'users#profile', :as => :profile
 
-  match '/decks' => 'decks#index'
+  resources :decks
 
   match '/playtest' => 'playtest#index'
   

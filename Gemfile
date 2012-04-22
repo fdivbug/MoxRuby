@@ -42,4 +42,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'hpricot'
 gem 'sorcery'
-gem 'haml'
+gem 'haml-rails'

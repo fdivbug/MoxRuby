@@ -45,11 +45,13 @@
                     %a{:href => '#'} Contact Us
 
       #site_content
-        - content_for? :sidebar
-        #sidebar_container
-          = yield :sidebar
-        #content
-          = yield
+        - if content_for? :sidebar
+          #sidebar_container= yield :sidebar
+        - if flash.key? :notice
+          #notice= notice
+        - if flash.key? :alert
+          #alert= alert
+        #content= yield
       #scroll
         %a{:title => "Back to the top", :class => "top", :href => "#"}
           %img{:src => "/images/top.png", :alt => "top"}

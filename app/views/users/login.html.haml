@@ -1,0 +1,12 @@
+%h1 Login
+= form_tag login_path, :method => :post do
+  %table
+    %tr
+      %th= label_tag :username
+      %td= text_field_tag :username
+    %tr
+      %th= label_tag :password
+      %td= password_field_tag :password
+    %tr
+      %td &nbsp;
+      %td= submit_tag "Login"

@@ -537,3 +537,7 @@ ul#nav-right li a {
 ul#nav-right li a:hover, ul#nav-right li a:focus, ul#nav-right li.selected { 
   background: #FFF;
 }
+
+.field_with_errors {
+  color: yellow;
+}
