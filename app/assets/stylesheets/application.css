@@ -404,11 +404,11 @@ Author: Jurriaan Roelofs
 
 /* Configuration of menu width */
 html body ul.sf-menu ul,html body ul.sf-menu ul li { 
-  width: 200px;
+  width: 150px;
 }
 
 html body ul.sf-menu ul ul { 
-  margin: 0 0 0 200px;
+  margin: 0 0 0 150px;
 }
 
 /* Framework for proper showing/hiding/positioning */

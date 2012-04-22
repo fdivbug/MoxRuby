@@ -30,6 +30,12 @@
               %li{:class => current_page?(:controller => "playtest") && "selected"}
                 = link_to "Playtest", :controller => "playtest"
             %ul#nav-right.sf-menu
+              - if current_user
+                %li= link_to "Logout", :logout
+                %li= link_to "Profile", :profile
+              - else
+                %li= link_to "Login", :login
+                %li= link_to "Register", new_user_path
               %li
                 %a{:href => '#'} Help
                 %ul
@@ -37,8 +43,6 @@
                     %a{:href => '#'} About
                   %li
                     %a{:href => '#'} Contact Us
-              %li
-                %a{:href => '#'} Login
 
       #site_content
         - content_for? :sidebar
@@ -58,4 +62,4 @@
             %em Magic
           = succeed ',' do
             %em Magic: the Gathering
-          and all card images are &trade; and &copy; Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. 
+          and all card images and game symbols are &trade; and &copy; Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. 
