@@ -6,7 +6,11 @@ class Printing < ActiveRecord::Base
   belongs_to :artist
   belongs_to :rarity
 
-  def wotc_image_url
+  def gatherer_image_url
     "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#{multiverse_id}&type=card"
+  end
+
+  def image_path
+    File.join(expansion.image_dir, "#{multiverse_id}.png")
   end
 end

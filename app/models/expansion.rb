@@ -14,4 +14,11 @@ class Expansion < ActiveRecord::Base
     "http://gatherer.wizards.com/Pages/Search/Default.aspx?output=checklist&set=[%22#{CGI.escape(name)}%22]"
   end
 
+  def image_dir
+    File.join(Rails.root, "public", "images", "cards", code)
+  end
+
+  def border_image_path
+    File.join(Rails.root, "public", "images", "cards", "border-#{border}.png")
+  end
 end

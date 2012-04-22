@@ -40,6 +40,8 @@ class Card < ActiveRecord::Base
   end
 
   def ascii_name
+    # The Oracle text file is regular ASCII, so when making lookups from it we
+    # need to convert Unicode card names into their bare ASCII equivalents.
     name.gsub("Æ", "AE").gsub("û", "u").gsub('é', 'e')
   end
 end

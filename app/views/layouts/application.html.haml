@@ -1,0 +1,61 @@
+!!! 5
+%html
+  %head
+    - if @title.nil? 
+      %title MoxRuby
+    - else
+      %title= "MoxRuby – #{@title}"
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #main
+      %header
+        #logo
+          #logo_text
+            %h1
+              = link_to :controller => "home" do
+                Mox
+                %span{:class => 'logo_colour'}> Ruby
+            %h2
+              It's
+              %em Magic.
+        %nav
+          #menu_container
+            %ul#nav.sf-menu
+              %li{:class => current_page?(:controller => "home") && "selected"}
+                = link_to "Home", :controller => "home"
+              %li{:class => current_page?(:controller => "decks") && "selected"}
+                = link_to "Decks", :controller => "decks"
+              %li{:class => current_page?(:controller => "playtest") && "selected"}
+                = link_to "Playtest", :controller => "playtest"
+            %ul#nav-right.sf-menu
+              %li
+                %a{:href => '#'} Help
+                %ul
+                  %li
+                    %a{:href => '#'} About
+                  %li
+                    %a{:href => '#'} Contact Us
+              %li
+                %a{:href => '#'} Login
+
+      #site_content
+        - content_for? :sidebar
+        #sidebar_container
+          = yield :sidebar
+        #content
+          = yield
+      #scroll
+        %a{:title => "Back to the top", :class => "top", :href => "#"}
+          %img{:src => "/images/top.png", :alt => "top"}
+      %footer
+        %p
+          Content and code &copy; 2012 Jeff A. Abbott.
+          %a{:href => "http://www.css3templates.co.uk"}Design from css3templates.co.uk
+        %p
+          = succeed ',' do
+            %em Magic
+          = succeed ',' do
+            %em Magic: the Gathering
+          and all card images are &trade; and &copy; Wizards of the Coast, Inc, a subsidiary of Hasbro, Inc. All rights reserved. 

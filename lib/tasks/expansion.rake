@@ -1,6 +1,8 @@
 require 'hpricot'
 require 'open-uri'
 require 'benchmark'
+require 'RMagick'
+require 'base64'
 require 'pp'
 
 class ExpansionDoesNotExistError < RuntimeError ; end
@@ -165,12 +167,26 @@ def update_prices(expansion)
   end
 end
 
-def download_images(expansion)
-  Dir.mkdir(File.join(Rails.root, "public", "images", expansion.code))
+def create_images(expansion)
+  puts "Downloading and re-borderizing #{expansion.printings.size} images for #{expansion.name}."
+
+  Dir.mkdir(expansion.image_dir) unless File.directory?(expansion.image_dir)
+
+  border_img = Magick::Image.read(expansion.border_image_path).first
+
   expansion.printings.each do |p|
-    File.open(File.join(Rails.root, "public", "images", expansion.code, "#{p.multiverse_id}.jpg"), 'wb') do |jpg|
-      jpg.write open(p.wotc_image_url).read
+    img_data64 = Base64.encode64(open(p.gatherer_image_url).read)
+    src_img = Magick::Image.read_inline(img_data64).first
+
+    case expansion.border
+    when 'alpha' # Alpha images from Gatherer have different dimensions.
+      cropped_img = src_img.crop(13, 13, 200, 285)
+    else
+      cropped_img = src_img.crop(11, 12, 200, 285)
     end
+
+    dest_img = border_img.composite(cropped_img, 11, 12, Magick::OverCompositeOp)
+    dest_img.write(p.image_path)
   end
 end
 
@@ -210,15 +226,17 @@ namespace :expansion do
   end
 
   namespace :images do
-    EXPANSIONS.each do |expansion|
-      eval <<-CODE
-        desc "Download card images for #{expansion[:name]}."
-        task "#{expansion[:code].downcase}" => :environment do
-          expansion = Expansion.find_by_code("#{expansion[:code]}")
-          raise ExpansionDoesNotExistError unless expansion
-          download_images(expansion)
-        end
-      CODE
+    namespace :create do
+      EXPANSIONS.each do |expansion|
+        eval <<-CODE
+          desc "Download and re-borderize card images for #{expansion[:name]}."
+          task "#{expansion[:code].downcase}" => :environment do
+            expansion = Expansion.find_by_code("#{expansion[:code]}")
+            raise ExpansionDoesNotExistError unless expansion
+            create_images(expansion)
+          end
+        CODE
+      end
     end
   end
 end
