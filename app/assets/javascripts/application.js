@@ -16,6 +16,5 @@
 //= require jquery.ui.widget
 //= require jquery.ui.mouse
 //= require jquery.ui.position
+//= require dataTables/jquery.dataTables
 //= require_tree .
-
-// Put jQuery stuff in here.

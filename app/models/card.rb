@@ -3,7 +3,7 @@ class Card < ActiveRecord::Base
 
   validates_uniqueness_of :name
 
-  has_many :printings
+  has_many :printings, :order => "multiverse_id"
   has_and_belongs_to_many :types
   has_and_belongs_to_many :subtypes, :join_table => "cards_types", :association_foreign_key => "type_id"
   has_and_belongs_to_many :supertypes, :join_table => "cards_types", :association_foreign_key => "type_id"
@@ -43,5 +43,10 @@ class Card < ActiveRecord::Base
     # The Oracle text file is regular ASCII, so when making lookups from it we
     # need to convert Unicode card names into their bare ASCII equivalents.
     name.gsub("Æ", "AE").gsub("û", "u").gsub('é', 'e')
+  end
+
+  def latest_printing
+    # Returns the most recent printing of a card.
+    printings.last
   end
 end

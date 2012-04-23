@@ -13,4 +13,8 @@ class Printing < ActiveRecord::Base
   def image_path
     File.join(expansion.image_dir, "#{multiverse_id}.png")
   end
+
+  def image_url
+    "#{expansion.image_url_dir}/#{multiverse_id}.png"
+  end
 end

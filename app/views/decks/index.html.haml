@@ -1,0 +1,24 @@
+%h1 Your Decks
+%table#decks
+  %thead
+    %th Name
+    %th Actions
+  %tbody
+    = render :partial => 'deck', :collection => @decks
+
+:javascript
+  $(document).ready(function() {
+    $('#decks').dataTable({
+      "bJQueryUI": true,
+      "bPaginate": false,
+      "bSort": false,
+      "bLengthChange": false,
+      "bInfo": false,
+      "bAutoWidth": true,
+      "sDom": '<"toolbar">frtip',
+      "oLanguage": {
+        "sZeroRecords": "No matching decks found"
+      }
+    });
+    $("div.toolbar").html('#{link_to "Create a New Deck", new_deck_path}');
+  });

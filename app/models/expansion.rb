@@ -18,6 +18,10 @@ class Expansion < ActiveRecord::Base
     File.join(Rails.root, "public", "images", "cards", code)
   end
 
+  def image_url_dir
+    "/images/cards/#{code}"
+  end
+
   def border_image_path
     File.join(Rails.root, "public", "images", "cards", "border-#{border}.png")
   end

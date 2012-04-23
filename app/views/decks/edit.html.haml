@@ -1,0 +1,27 @@
+#card_image_container
+  = image_tag "/images/cards/card-back.png", {:id => 'card_preview'}
+%table#card_list
+  %thead{:style => 'display: none;'}
+    %tr
+      %th Card
+  %tbody
+    = render  :partial => "card_list", :collection => @cards, :as => :card
+
+:javascript
+  $(document).ready(function() {
+    $('#card_list').dataTable({
+      "bJQueryUI": true,
+      "bPaginate": false,
+      "bSort": false,
+      "bFilter": true,
+      "bLengthChange": false,
+      "bInfo": false
+    });
+
+    $('#card_list_wrapper').height($(window).height() - 365);
+  });
+
+  $(window).resize(function() {
+    $('#card_list_wrapper').height($(window).height() - 365);
+  });
+

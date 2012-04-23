@@ -1,0 +1,31 @@
+!!! 5
+%html
+  %head
+    - if @title.nil? 
+      %title MoxRuby
+    - else
+      %title= raw "#{@title} &bull; MoxRuby"
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %nav.fullscreen
+      #menu_container
+        %ul#nav.sf-menu
+          %li= link_to raw("Mox<span class='logo_colour'>Ruby</span>"), :controller => "home"
+          %li
+            %a{:href => '#'} Deck Editor
+            %ul
+              %li
+                %a{:href => '#'} Save
+              %li
+                %a{:href => '#'} Import
+              %li
+                %a{:href => '#'} Export
+              %li &nbsp;
+              %li= link_to "Exit", :controller => "decks"
+          %li
+            %a{:href => '#'} Help
+
+    #site_content.fullscreen
+      = yield

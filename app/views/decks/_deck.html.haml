@@ -1,0 +1,5 @@
+%tr
+  %td= deck.name
+  %td
+    = link_to "Edit", edit_deck_path(deck.id)
+    = link_to "Delete", deck, :confirm => raw("Are you sure you want to delete &ldquo;#{deck.name}&rdquo;?"), :method => :delete

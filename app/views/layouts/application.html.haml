@@ -4,7 +4,7 @@
     - if @title.nil? 
       %title MoxRuby
     - else
-      %title= "MoxRuby – #{@title}"
+      %title= raw "#{@title} &bull; MoxRuby"
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags

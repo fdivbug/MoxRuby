@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120420212746) do
+ActiveRecord::Schema.define(:version => 20120422220404) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
@@ -31,9 +31,24 @@ ActiveRecord::Schema.define(:version => 20120420212746) do
     t.datetime "updated_at",         :null => false
   end
 
+  create_table "cards_decks", :force => true do |t|
+    t.integer "card_id"
+    t.integer "deck_id"
+    t.integer "count"
+    t.string  "section"
+  end
+
   create_table "cards_types", :force => true do |t|
     t.integer "card_id"
     t.integer "type_id"
+  end
+
+  create_table "decks", :id => false, :force => true do |t|
+    t.string   "uuid",       :limit => 36
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
   end
 
   create_table "expansions", :force => true do |t|
